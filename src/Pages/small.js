@@ -1,69 +1,20 @@
 import React from "react";
 
 import skban from "../images/skban.jpg";
-
-
+// import HomePage from "./HomePage"; 
+import { BrowserRouter as Router,Link } from "react-router-dom";
 
 
 
 const MainPage = () => {
   return (
     <div>
-      <div className="w-full  bg-blue-900   ">
-        <ul className="flex w-full justify-end text-white sm:flex sm:justify-around sm:p-4 sm:text-3xl lg:text-xs lg:justify-end lg:p-0">
-          <li className="px-1 border-r-2 border-l-2 border-white   ">
-            <a href="#" >
-              Outage center
-            </a>
-          </li>
-          <li className="border-l-2 px-1 border-r-2  border-white   ">
-            <a href="#" className="  ">
-              Pay your bill
-            </a>
-          </li>
-          <li className="border-l-2  px-1 border-r-2  border-white   ">
-            <a href="#" className="  ">
-              Start,stop move service
-            </a>
-          </li>
-          <li className="border-l-2  px-1 border-r-2  border-white   ">
-            <a href="#" className=" ">
-              Contact us
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div className="h-14 w-full  flex-col justify-around sm:flex sm:flex-row">
-        <div>
-          <h1 className="text-2xl uppercase font-bold mt-3 text-blue-900">
-            xyz power
-          </h1>
-        </div>
-        <div className ="sm:flex sm:justify-between">
-          <ul className="flex justify-around mt-3 font-semibold ">
-            <li className="sm:p-2">
-              <a href="#" className="uppercase text text-blue-900">
-                home page
-              </a>
-            </li>
-            <li className="sm:p-2">
-              <a href="#" className="uppercase text text-blue-900">
-                your home
-              </a>
-            </li>
-            <li className="sm:p-2 ">
-              <a href="#" className="uppercase text text-blue-900">
-                community
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      
       <div className="bg-black h-56 w-full mt-10  ">
         <img src={skban} className="h-56 w-full "></img>
       </div>
 
-      <div className="w-full bg-blue-300  flex  justify-center items-center  ">
+      <div className="w-full bg-blue-200  flex  justify-center items-center  ">
         <div className="flex   items-center justify-around  sm:flex-col lg:flex lg:flex-row ">
           <div className="w-full h-full flex flex-col justify-around sm:flex sm:flex-row sm:justify-between">
             <button className="bg-white w-24 h-11 text-sm text-blue-900 m-3 font-semibold sm:w-32 ">
@@ -123,13 +74,13 @@ const MainPage = () => {
       <div className="w-full h-12 bg-blue-100 mt-12 flex flex-col justify-around sm:flex-row lg:flex lg:justify-around">
         <div className="flex items-center ">
           
-          <p className="text-xs text-black ">&copy; 2021 XYZ POWER</p></div>
+          <p className="text-xs text-black sm:text-base">&copy; 2021 XYZ POWER</p></div>
  <div className="flex items-center w-full justify-around lg:justify-end lg:justify-around lg:w-96">
-        <a href="#" className="text-xs text-blue-900 font-semibold">Media</a>
-        <a href="#" className="text-xs text-blue-900 font-semibold">Legal</a>
-        <a href="#" className="text-xs text-blue-900 font-semibold">Privacy statement</a>
-        <a href="#" className="text-xs text-blue-900 font-semibold">Careers</a>
-        <a href="#" className="text-xs text-blue-900 font-semibold">Site map</a>
+        <a href="#" className="text-xs text-blue-900 font-semibold  sm:text-base">Media</a>
+        <a href="#" className="text-xs text-blue-900 font-semibold  sm:text-base">Legal</a>
+        <a href="#" className="text-xs text-blue-900 font-semibold  sm:text-base">Privacy statement</a>
+        <a href="#" className="text-xs text-blue-900 font-semibold  sm:text-base">Careers</a>
+        <a href="#" className="text-xs text-blue-900 font-semibold  sm:text-base">Site map</a>
 
       </div>
       </div>

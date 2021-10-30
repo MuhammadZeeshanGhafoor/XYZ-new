@@ -12,7 +12,7 @@ import second from "../images/secn.jpg";
 const HomePage = () => {
   return (
     <div>
-      <div className="w-full  bg-indigo-600">
+      {/* <div className="w-full  bg-indigo-600">
         <ul className="flex w-full justify-end text-white ">
           <li>
             <a href="#" className="text-sm ">
@@ -61,76 +61,120 @@ const HomePage = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
       {/* banner */}
-      <div className="bg-black h-56 w-full ">
+      <div className="bg-black h-56 w-full mt-10 ">
         <img src={banner} className="h-56 w-full"></img>
       </div>
-      <div className="w-full  flex justify-center mt-5">
-        <div className="w-6/12   flex p-2 justify-between">
-          <div className="bg-red-300 h-36 w-48">
-            <img src={account}></img>
-            <div className="w-full  bg-indigo-600">
-              <p className="font-semibold text-white">My aacount </p>
-            </div>
+      {/* Cards */}
+      <div className="w-full flex  flex-col   justify-between items-center mt-12 sm:flex-row lg:flex-col">
+        <div className="flex flex-col items-center w-8/12  lg:flex-row lg:justify-around">
+          <div className="bg-blue-900 flex flex-col w-10/12 mt-10 ">
+            <img src={account} className="h-60 sm:96 lg:h-60 "></img>
+            <h1 className="font-semibold text-white bg-blue-900 self-start p-2 ">
+              Manage Account &gt;{" "}
+            </h1>
           </div>
-          <div className="bg-red-300 h-36 w-48 object- ">
-            <img src={products} className="h-32 w-48 "></img>
-            <div className="w-full  bg-indigo-600">
-              <p className="font-semibold text-white">Energy products </p>
-            </div>
+          <div className="bg-blue-900 flex flex-col w-10/12 mt-10 lg:ml-1">
+            <img src={products} className="h-60"></img>
+            <h1 className="font-semibold text-white bg-blue-900 self-start p-2">
+              Energy Products &gt;{" "}
+            </h1>
           </div>
-          <div className="bg-red-300 h-36 w-48">
-            <img src={money}></img>
-            <div className="w-full  bg-indigo-600">
-              <p className="font-semibold text-white">Save Money & Energy</p>
-            </div>
+          <div className="bg-blue-900 flex flex-col w-10/12 mt-10 lg:ml-1">
+            <img src={money} className="h-60"></img>
+            <h1 className="font-semibold text-white bg-blue-900 self-start p-2">
+              Save Money &amp; Energy &gt;{" "}
+            </h1>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center lg:flex-row lg:w-8/12 ">
+          <div className="bg-blue-900 flex flex-col w-10/12  mt-10 lg:w-2/6 ml-1">
+            <img src={meter} className="h-60"></img>
+            <h1 className="font-semibold text-white bg-blue-900 self-start p-2 ">
+              Smart Meters &gt;{" "}
+            </h1>
+          </div>
+          <div className="bg-blue-900 flex flex-col w-10/12 mt-10 lg:w-2/6 ml-1">
+            <img src={building} className="h-60"></img>
+            <h1 className="font-semibold text-white bg-blue-900 self-start p-2">
+              Building &amp; Renovating &gt;{" "}
+            </h1>
+          </div>
+          <div className="bg-blue-900 flex flex-col w-10/12 mt-10 lg:w-2/6 ml-1">
+            <img src={safety} className="h-60 "></img>
+            <h1 className="font-semibold text-white bg-blue-900 self-start lg:p-2">
+              Safety &gt;{" "}
+            </h1>
           </div>
         </div>
       </div>
-      <div className="w-full  flex justify-center mt-5">
-        <div className="w-6/12   flex p-2 justify-between">
-          <div className="bg-red-300 h-36 w-48">
-            <img src={meter} className="h-32 w-48"></img>
-            <div className="w-full  bg-indigo-600">
-              <p className="font-semibold text-white">Meter </p>
-            </div>
-          </div>
-          <div className="bg-red-300 h-36 w-48 object- ">
-            <img src={building} className="h-32 w-48 "></img>
-            <div className="w-full  bg-indigo-600">
-              <p className="font-semibold text-white">
-                Building and renovating
-              </p>
-            </div>
-          </div>
-          <div className="bg-red-300 h-36 w-48">
-            <img src={safety}></img>
-            <div className="w-full  bg-indigo-600">
-              <p className="font-semibold text-white">safety</p>
-            </div>
+      {/* sect */}
+        <div className="flex flex-col w-full items-center  mt-10">
+          <h1 className="text-xl font-bold uppercase p-3">
+            finding the right energy products for your home
+          </h1>
+          <div className="flex flex-col w-10/12 lg:flex-row">
+            <img src={first} className="lg:w-96"></img>
+            <p className="text-sm font-semibold items-start sm:text-lg">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+              est, qui dolorem ipsum quia dolor sit amet, consectetur
+            </p>
           </div>
         </div>
-      </div>
-      {/* text area */}
-      <div className="h-full w-full flex justify-center">
-        <div className="flex flex-col bg-red-400 w-6/12  ">
-          <div className="w-full mt-5  ">
-              <h1 className="text-xl text-black font-bold uppercase">finding the right energy products for your home</h1>
-            <div className="flex h-40">
-            <div >
-                <img src={first} className='w-96 p-2'></img>
+      
+        <div className="flex flex-col w-full items-center  mt-10 py-1">
+          <div className="flex flex-col w-10/12 lg:flex-row">
+            <img src={second} className="lg:w-96 lg:h-64"></img>
+            <p className="text-sm font-semibold items-start sm:text-lg">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+              est, qui dolorem ipsum quia dolor sit amet, consectetur
+            </p>
+          </div>
+        </div>
+        {/* help sec */}
+        <div className="w-full bg-gray-200 ">
+          <h1 className="text-xl font-bold uppercase p-3">need some additional help?</h1>
+          <div className="flex flex-col items-center sm:flex-row sm:justify-center sm:justify-around">
+            <div className="bg-white w-44 h-20 border-2 border-gray-300 py-3 mt-3 mb-3">
+              <h1 className="text-base uppercase font-semibold">find quick answers</h1>
+              <h1 className="text-sm uppercase text-indigo-800 font-semibold">Browser our FAQ</h1>
             </div>
-            <div className=" w-6/12  ">
-                    <h1 className="text-left truncate ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </h1><h1> do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h1>
+            <div className="bg-white w-44 h-20 border-2 border-gray-300 py-3 mt-3 mb-3">
+              <h1 className="text-base uppercase font-semibold">contact us</h1>
+              <h1 className="text-sm uppercase text-indigo-800 font-semibold">by email or phone</h1>
             </div>
+            <div className="bg-white w-44 h-20 border-2 border-gray-300 py-3 mt-3 mb-3">
+              <h1 className="text-base uppercase font-semibold">self-service form</h1>
+              <h1 className="text-sm uppercase text-indigo-800 font-semibold">View our customer service page</h1>
             </div>
           </div>
 
         </div>
-        
+        <div className="w-full h-12 bg-blue-100 mt-12 flex flex-col justify-around sm:flex-row lg:flex lg:justify-around">
+        <div className="flex items-center ">
+          
+          <p className="text-xs text-black ">&copy; 2021 XYZ POWER</p></div>
+ <div className="flex items-center w-full justify-around lg:justify-end lg:justify-around lg:w-96 ">
+        <a href="#" className="text-xs text-blue-900 font-semibold sm:text-base">Media</a>
+        <a href="#" className="text-xs text-blue-900 font-semibold sm:text-base">Legal</a>
+        <a href="#" className="text-xs text-blue-900 font-semibold sm:text-base">Privacy statement</a>
+        <a href="#" className="text-xs text-blue-900 font-semibold sm:text-base">Careers</a>
+        <a href="#" className="text-xs text-blue-900 font-semibold sm:text-base">Site map</a>
+
       </div>
-      
+      </div>
     </div>
   );
 };
